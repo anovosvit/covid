@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EF5350</color>
+    <color name="colorPrimaryDark">#BC2B2B</color>
+    <color name="colorAccent">#E64A19</color>
+    <color name="cardBackground">#FFCDD2</color>
+    <color name="detailsInfo">#FAF1F0</color>
+
+    <color name="totalConfirmed">#E91E63</color>
+    <color name="totalRecovered">#009688</color>
+    <color name="totalDeaths"></color>
+</resources>

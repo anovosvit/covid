@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".countrydetail.CountryDetailsActivity">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+        <RelativeLayout
+                android:id="@+id/countryBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+            <TextView
+                    android:id="@+id/countryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/imageView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="100dp"
+                    android:paddingStart="30dp"
+                    android:paddingTop="30dp"
+                    android:text="USA"
+                    android:textColor="@android:color/black"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/totalCases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/countryText"
+                    android:paddingStart="30dp"
+                    android:text="Coronavirus Details"
+                    android:textColor="@color/colorPrimaryDark" />
+
+
+            <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/coronavirus" />
+
+        </RelativeLayout>
+
+
+        <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:alignmentMode="alignMargins"
+                android:background="@drawable/container"
+                android:columnCount="2"
+                android:padding="16dp"
+                android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                    style="@style/CardInfo"
+                    android:layout_marginTop="40dp">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/totalConfirmedTextView"
+                            style="@style/StatisticTextView"
+                            android:text="100000000" />
+
+                    <TextView
+                            style="@style/StatisticInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Confirmed" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                    style="@style/CardInfo"
+                    android:layout_marginTop="40dp">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/newConfirmedTextView"
+                            style="@style/StatisticTextView"
+                            android:text="+6" />
+
+                    <TextView
+                            style="@style/StatisticInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Confirmed" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/CardInfo"
+                    >
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/totalDeathsTextView"
+                            style="@style/StatisticTextView"
+                            android:text="12321" />
+
+                    <TextView
+                            style="@style/StatisticInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Deaths" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/CardInfo">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/newDeathsTextView"
+                            style="@style/StatisticTextView"
+                            android:text="4" />
+
+                    <TextView
+                            style="@style/StatisticInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Deaths" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/CardInfo">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/totalRecoveredTextView"
+                            style="@style/StatisticTextView"
+                            android:text="12321" />
+
+                    <TextView
+                            style="@style/StatisticInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Recovered" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView style="@style/CardInfo">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/newRecoveredTextView"
+                            style="@style/StatisticTextView"
+                            android:text="12321" />
+
+                    <TextView
+                            style="@style/StatisticInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Recovered" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+</RelativeLayout>
