@@ -3,7 +3,7 @@ package com.github.anovosvit.covidapp.countrydetail;
 
 import com.github.anovosvit.covidapp.model.CountryInfo;
 
-public interface CounryDetailsContract {
+public interface CountryDetailsContract {
     interface View {
         void setDataToViews(CountryInfo currentCountry);
     }

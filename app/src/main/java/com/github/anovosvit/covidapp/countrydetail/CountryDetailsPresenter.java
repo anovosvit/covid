@@ -3,11 +3,11 @@ package com.github.anovosvit.covidapp.countrydetail;
 import com.github.anovosvit.covidapp.model.CountryInfo;
 import com.google.gson.Gson;
 
-public class CountryDetailsPresenter implements CounryDetailsContract.Presenter {
+public class CountryDetailsPresenter implements CountryDetailsContract.Presenter {
 
-    private CounryDetailsContract.View view;
+    private CountryDetailsContract.View view;
 
-    public CountryDetailsPresenter(CounryDetailsContract.View view) {
+    public CountryDetailsPresenter(CountryDetailsContract.View view) {
         this.view = view;
     }
 

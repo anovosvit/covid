@@ -3,10 +3,15 @@
     <string name="enter_country">Enter country name</string>
     <string name="total_confirmed">Total Confirmed</string>
     <string name="total_deaths">Total Deaths</string>
+    <string name="coronavirus_details">Coronavirus Details</string>
+    <string name="new_deaths">New Deaths</string>
+    <string name="new_confirmed">New Confirmed</string>
     <string name="total_recovered">Total Recovered</string>
+    <string name="new_recovered">New Recovered</string>
     <string name="error_data">Something went wrong! Please try again later.</string>
     <string name="communication_error">Error in getting data. Please try again later.</string>
     <string name="key_country_id">KEY_COUNTRY_ID</string>
     <string name="no_such_country">There is no such country</string>
+    <string name="find_your_country_statistics">Find your country statistics</string>
 
 </resources>

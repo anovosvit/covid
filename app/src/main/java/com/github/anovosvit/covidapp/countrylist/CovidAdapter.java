@@ -66,7 +66,7 @@ public class CovidAdapter extends RecyclerView.Adapter<CovidAdapter.CovidViewHol
         public CovidViewHolder(@NonNull View itemView) {
             super(itemView);
             countryName = itemView.findViewById(R.id.countryName);
-            totalConfirmed = itemView.findViewById(R.id.totalConfirmedTextView);
+            totalConfirmed = itemView.findViewById(R.id.globalTotalConfirmed);
             totalRecovered = itemView.findViewById(R.id.totalRecoveredTextView);
         }
     }

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".countrydetail.CountryDetailsActivity">
-
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -29,10 +28,10 @@
                     android:layout_marginRight="100dp"
                     android:paddingStart="30dp"
                     android:paddingTop="30dp"
-                    android:text="USA"
                     android:textColor="@android:color/black"
                     android:textSize="32sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:text="USA" />
 
             <TextView
                     android:id="@+id/totalCases"
@@ -40,7 +39,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/countryText"
                     android:paddingStart="30dp"
-                    android:text="Coronavirus Details"
+                    android:text="@string/coronavirus_details"
                     android:textColor="@color/colorPrimaryDark" />
 
 
@@ -49,6 +48,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
+                    android:contentDescription="@string/coronavirus_details"
                     android:src="@drawable/coronavirus" />
 
         </RelativeLayout>
@@ -78,13 +78,14 @@
                     <TextView
                             android:id="@+id/totalConfirmedTextView"
                             style="@style/StatisticTextView"
-                            android:text="100000000" />
+                            android:textColor="@color/totalConfirmed"
+                            tools:text="100000000" />
 
                     <TextView
                             style="@style/StatisticInfo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Total Confirmed" />
+                            android:text="@string/total_confirmed" />
 
                 </LinearLayout>
 
@@ -102,21 +103,21 @@
 
                     <TextView
                             android:id="@+id/newConfirmedTextView"
+                            android:textColor="@color/totalConfirmed"
                             style="@style/StatisticTextView"
-                            android:text="+6" />
+                            tools:text="6" />
 
                     <TextView
                             style="@style/StatisticInfo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="New Confirmed" />
+                            android:text="@string/new_confirmed" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView style="@style/CardInfo"
-                    >
+            <androidx.cardview.widget.CardView style="@style/CardInfo">
 
                 <LinearLayout
                         android:layout_width="wrap_content"
@@ -127,13 +128,13 @@
                     <TextView
                             android:id="@+id/totalDeathsTextView"
                             style="@style/StatisticTextView"
-                            android:text="12321" />
+                            tools:text="12321" />
 
                     <TextView
                             style="@style/StatisticInfo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Total Deaths" />
+                            android:text="@string/total_deaths" />
 
                 </LinearLayout>
 
@@ -151,13 +152,13 @@
                     <TextView
                             android:id="@+id/newDeathsTextView"
                             style="@style/StatisticTextView"
-                            android:text="4" />
+                            tools:text="4" />
 
                     <TextView
                             style="@style/StatisticInfo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="New Deaths" />
+                            android:text="@string/new_deaths" />
 
                 </LinearLayout>
 
@@ -174,13 +175,14 @@
                     <TextView
                             android:id="@+id/totalRecoveredTextView"
                             style="@style/StatisticTextView"
-                            android:text="12321" />
+                            android:textColor="@color/totalRecovered"
+                            tools:text="12321" />
 
                     <TextView
                             style="@style/StatisticInfo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Total Recovered" />
+                            android:text="@string/total_recovered" />
 
                 </LinearLayout>
 
@@ -196,19 +198,19 @@
 
                     <TextView
                             android:id="@+id/newRecoveredTextView"
+                            android:textColor="@color/totalRecovered"
                             style="@style/StatisticTextView"
-                            android:text="12321" />
+                            tools:text="12321" />
 
                     <TextView
                             style="@style/StatisticInfo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="New Recovered" />
+                            android:text="@string/new_recovered" />
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
 
         </GridLayout>
 

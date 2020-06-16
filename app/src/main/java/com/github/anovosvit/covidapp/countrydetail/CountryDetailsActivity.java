@@ -9,12 +9,12 @@ import android.widget.TextView;
 import com.github.anovosvit.covidapp.R;
 import com.github.anovosvit.covidapp.model.CountryInfo;
 
-public class CountryDetailsActivity extends AppCompatActivity implements CounryDetailsContract.View {
+public class CountryDetailsActivity extends AppCompatActivity implements CountryDetailsContract.View {
 
     private TextView countryTextView, totalConfirmedTextView, newConfirmedTextView,
             totalDeathsTextView, newDeathsTextView, totalRecoveredTextView, newRecoveredTextView;
 
-    private CounryDetailsContract.Presenter presenter;
+    private CountryDetailsContract.Presenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
